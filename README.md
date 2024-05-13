@@ -1,3 +1,10 @@
+## Resources
+
+[Open AI](https://platform.openai.com/)
+[FRED STL](https://fred.stlouisfed.org/series/T10YFF)
+
+- Create an account and setup your API Keys.
+
 ## Features
 
 - <b>LangChain and SQLite Integration</b>: Demonstrates how to use LangChain with SQLite for querying and analyzing financial data using natural language.
@@ -12,6 +19,7 @@
 - Basic Knowledge of SQL, Python, and financial datasets.
 
 ## Environment Setup
+
 Setting Up the Environment
 Before diving into the data analysis, it's essential to set up our environment by installing all necessary Python packages. This includes `pandas` for data manipulation, `sqlite3` for interacting with SQLite databases, `openai` and `langchain` for leveraging LangChain's capabilities, and other packages that will be used throughout this notebook.
 
@@ -27,3 +35,4 @@ pip3 install faiss-cpu
 pip3 install openai
 pip3 install SQLAlchemy
 pip3 install load_dotenv
+```
