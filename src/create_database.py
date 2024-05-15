@@ -22,31 +22,31 @@ def create_tables(db_name):
             DGS1MO REAL,
             DGS3MO REAL,
             DGS6MO REAL,
-            DGS1YR REAL,  
-            DGS2YR REAL,
-            DGS3YR REAL,
-            DGS5YR REAL,
-            DGS7YR REAL,
-            DGS10YR REAL,
-            DGS20YR REAL,
-            DGS30YR REAL
+            DGS1 REAL,
+            DGS2 REAL,
+            DGS3 REAL,
+            DGS5 REAL,
+            DGS7 REAL,
+            DGS10 REAL,
+            DGS20 REAL,
+            DGS30 REAL
             )''')
         
         # production data table if it doesn't exist
         cursor.execute('''CREATE TABLE IF NOT EXISTS production_data (
             Date TEXT PRIMARY KEY,
-            Saudi_GDP_Monthly_BD REAL,  -- Assuming 'BD' is a relevant unit or identifier
-            UAE_GDP_Monthly_BD REAL,
-            Iran_GDP_Monthly_BD REAL,
-            Saudi_Exports_Oil REAL,
-            Qatar_GDP_Monthly_BD REAL,
-            Kazakhstan_GDP_Monthly_BD REAL,
-            Iraq_Exports_Oil REAL,
-            Iran_Exports_Oil REAL,
-            Kuwait_GDP_Monthly_BD REAL,
-            Industrial_Production_Index REAL,  -- Assuming 'IPN213111S' is an index code
-            Price_Change_Utility REAL,  -- Assuming 'PCU213111213111' relates to price change
-            GDP_Commercial_Vehicle REAL  -- Assuming 'DPCCRV1Q225SBEA' relates 
+            SAUNGDPMOMBD REAL,
+            ARENGDPMOMBD REAL,
+            IRNNGDPMOMBD REAL,
+            SAUNXGO REAL,
+            QATNGDPMOMBD REAL,
+            KAZNGDPMOMBD REAL,
+            IRQNXGO REAL,
+            IRNNXGO REAL,
+            KWTNGDPMOMBD REAL,
+            IPN213111S REAL,
+            PCU213111213111 REAL,
+            DPCCRV1Q225SBEA REAL
             )''')
         
         # business_cycles table with an auto-increment ID as the primary key
