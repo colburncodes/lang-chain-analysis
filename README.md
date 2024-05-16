@@ -1,7 +1,10 @@
 ## Resources
 
 [Open AI](https://platform.openai.com/)
+
 [FRED STL](https://fred.stlouisfed.org/series/T10YFF)
+
+[LANG_CHAIN_API](https://api.python.langchain.com/en/latest/langchain_api_reference.html)
 
 - Create an account and setup your API Keys.
 
